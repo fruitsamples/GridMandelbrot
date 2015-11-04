@@ -56,7 +56,6 @@ typedef enum _SelectionTrackingMode
 	
 @interface GMCropMarker : NSObject
   {
-	NSImage		*handimage;
 	NSCursor 	*handcursor;
 	BOOL		haveoldselection;
 	NSRect		oldselectionrect;

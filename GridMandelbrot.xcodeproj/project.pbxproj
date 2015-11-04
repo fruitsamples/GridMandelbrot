@@ -21,34 +21,9 @@
 		A4E4EEE40752BB0D00D6EF5A /* tour.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4E4EEE30752BB0D00D6EF5A /* tour.txt */; };
 		A4E4EEE50752BB2B00D6EF5A /* MandelTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4E4EEB80752B6B800D6EF5A /* MandelTool */; };
 		A4E4EEF00752BB7300D6EF5A /* GMCropMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E4EEEC0752BB7300D6EF5A /* GMCropMarker.m */; };
-		A4E4EEF10752BB7300D6EF5A /* Hand.tif in Resources */ = {isa = PBXBuildFile; fileRef = A4E4EEED0752BB7300D6EF5A /* Hand.tif */; };
 		A4E4EEF20752BB7300D6EF5A /* GMRectangleDraggerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E4EEEF0752BB7300D6EF5A /* GMRectangleDraggerView.m */; };
 		A4E4F1150752BC9E00D6EF5A /* GMApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E4F1130752BC9E00D6EF5A /* GMApplicationDelegate.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildStyle section */
-		4A9504CCFFE6A4B311CA0CBA /* Development */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-			};
-			name = Development;
-		};
-		4A9504CDFFE6A4B311CA0CBA /* Deployment */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-/* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
 		A4E4F10A0752BC1700D6EF5A /* PBXContainerItemProxy */ = {
@@ -98,7 +73,6 @@
 		A4E4EEE30752BB0D00D6EF5A /* tour.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tour.txt; sourceTree = "<group>"; };
 		A4E4EEEB0752BB7300D6EF5A /* GMCropMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMCropMarker.h; sourceTree = "<group>"; };
 		A4E4EEEC0752BB7300D6EF5A /* GMCropMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMCropMarker.m; sourceTree = "<group>"; };
-		A4E4EEED0752BB7300D6EF5A /* Hand.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Hand.tif; sourceTree = "<group>"; };
 		A4E4EEEE0752BB7300D6EF5A /* GMRectangleDraggerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMRectangleDraggerView.h; sourceTree = "<group>"; };
 		A4E4EEEF0752BB7300D6EF5A /* GMRectangleDraggerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMRectangleDraggerView.m; sourceTree = "<group>"; };
 		A4E4F1120752BC9E00D6EF5A /* GMApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMApplicationDelegate.h; sourceTree = "<group>"; };
@@ -196,7 +170,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A4E4EEED0752BB7300D6EF5A /* Hand.tif */,
 				A4E4EEE30752BB0D00D6EF5A /* tour.txt */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -239,18 +212,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 22;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GridMandelbrot_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
-				PREBINDING = NO;
-				PRODUCT_NAME = "Xgrid Mandelbrot";
-				VERSIONING_SYSTEM = "apple-generic";
-				WRAPPER_EXTENSION = app;
-			};
 			dependencies = (
 				A4E4F10B0752BC1700D6EF5A /* PBXTargetDependency */,
 			);
@@ -269,24 +230,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				INSTALL_PATH = "$(HOME)/bin";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
-				PRODUCT_NAME = MandelTool;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				ZERO_LINK = NO;
-			};
 			dependencies = (
 			);
 			name = MandelTool;
@@ -300,15 +243,12 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 8A51C3D3088435A1007E3447 /* Build configuration list for PBXProject "GridMandelbrot" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				4A9504CCFFE6A4B311CA0CBA /* Development */,
-				4A9504CDFFE6A4B311CA0CBA /* Deployment */,
-			);
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* GridMandelbrot */;
 			projectDirPath = "";
+			projectRoot = "";
+			shouldCheckCompatibility = 1;
 			targets = (
 				8D1107260486CEB800E47090 /* Xgrid Mandelbrot */,
 				A4E4EEB70752B6B800D6EF5A /* MandelTool */,
@@ -324,7 +264,6 @@
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				A4E4EEE40752BB0D00D6EF5A /* tour.txt in Resources */,
-				A4E4EEF10752BB7300D6EF5A /* Hand.tif in Resources */,
 				A423D2A30754FF19007712BC /* MainWindow.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = 24;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -450,7 +389,7 @@
 					ppc,
 					i386,
 				);
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = 24;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

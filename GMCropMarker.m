@@ -58,12 +58,7 @@ Copyright 2002 Apple Computer, Inc., All Rights Reserved
   if (self = [super init])
 		{
 		
-		handimage = [[NSImage alloc] initWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"Hand" ofType:@"tif"]];
-		
-		if (handimage) {
-			handcursor = [[NSCursor alloc] initWithImage:handimage hotSpot:NSMakePoint(8, 3)];
-		}
-		
+		handcursor = [[NSCursor openHandCursor] retain];
 		haveoldselection = false;
 		
 		target = aView;
@@ -173,7 +168,6 @@ Copyright 2002 Apple Computer, Inc., All Rights Reserved
   {
   if (fillColor) [fillColor release];
   if (strokeColor) [strokeColor release];
-  if (handimage) [handimage release];
   if (handcursor) [handcursor release];
   
   [super dealloc];
